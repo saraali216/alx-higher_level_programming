@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""Defines a text file-reading function."""
 
 
-class Rectangle:
-    """Represent a rectangle."""
-    pass
+def read_file(filename=""):
+    """Print the contents of a UTF8 text file to stdout."""
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
